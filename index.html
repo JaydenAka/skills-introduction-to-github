@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StyleNest Clothing Shop</title>
+    <style>
+      :root {
+        color-scheme: light;
+      }
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f7f7f7;
+        color: #222;
+      }
+      header {
+        background: #111;
+        color: #fff;
+        padding: 2rem 1rem;
+        text-align: center;
+      }
+      main {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 2rem 1rem 3rem;
+      }
+      .products {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+      }
+      .product {
+        background: #fff;
+        border-radius: 8px;
+        padding: 1rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      }
+      .product h3 {
+        margin-top: 0;
+      }
+      .price {
+        color: #0a7f3f;
+        font-weight: bold;
+      }
+      footer {
+        text-align: center;
+        padding: 1rem;
+        font-size: 0.9rem;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>StyleNest</h1>
+      <p>Modern clothing for every season.</p>
+    </header>
+    <main>
+      <h2>Featured Products</h2>
+      <section class="products" aria-label="Featured clothing products">
+        <article class="product">
+          <h3>Classic Denim Jacket</h3>
+          <p>Comfortable fit with timeless style.</p>
+          <p class="price">$59.00</p>
+        </article>
+        <article class="product">
+          <h3>Everyday Cotton T-Shirt</h3>
+          <p>Soft fabric available in multiple colors.</p>
+          <p class="price">$19.00</p>
+        </article>
+        <article class="product">
+          <h3>Tailored Chino Pants</h3>
+          <p>Slim-fit design for casual or office wear.</p>
+          <p class="price">$42.00</p>
+        </article>
+      </section>
+    </main>
+    <footer>© 2026 StyleNest Clothing Shop</footer>
+  </body>
+</html>
